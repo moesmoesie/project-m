@@ -15,6 +15,7 @@ const PageZod = z.object({
       keywords: z.array(z.string()).optional(),
       dontIndex: z.boolean().optional(),
     })
+    .nullable()
     .optional(),
   modules: z.array(ModuleZod).optional(),
 });
