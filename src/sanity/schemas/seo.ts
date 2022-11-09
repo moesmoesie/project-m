@@ -20,6 +20,9 @@ export default defineType({
       title: "Keywords",
       type: "array",
       of: [{ type: "string" }],
+      options: {
+        layout: "tags",
+      },
     },
     {
       name: "dontIndex",

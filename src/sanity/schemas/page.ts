@@ -26,28 +26,6 @@ export default defineType({
       title: "Slug",
     }),
     defineField({
-      name: "title",
-      title: "Title",
-      type: "string",
-      group: "seo",
-    }),
-    defineField({
-      name: "description",
-      title: "Description",
-      type: "text",
-      group: "seo",
-    }),
-    defineField({
-      name: "keywords",
-      title: "Keywords",
-      type: "array",
-      of: [{ type: "string" }],
-      options: {
-        layout: "tags",
-      },
-      group: "seo",
-    }),
-    defineField({
       name: "modules",
       title: "Modules",
       type: "array",
@@ -58,6 +36,9 @@ export default defineType({
       name: "seo",
       title: "SEO",
       type: "seo",
+      options: {
+        layout: "tags",
+      },
     }),
   ],
 });
