@@ -9,7 +9,7 @@ export const Header: React.FC<HeaderType> = (props) => {
       <ModuleContainer module={{ background: "white", ...props?.module }}>
         <div className="border-b py-3 medium:py-5 border-grey-200">
           <Container>
-            <h1>Hello World!</h1>
+            <h1>{props.logo}</h1>
           </Container>
         </div>
       </ModuleContainer>
