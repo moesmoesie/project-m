@@ -5,7 +5,7 @@ import { ModuleZod } from "../../types";
 
 export const Footer: React.FC<FooterType> = (props) => {
   return (
-    <div className="mt-auto">
+    <div className="mt-auto py-6 bg-grey-500 text-white">
       <ModuleContainer module={props?.module}>
         <Container>
           <p>{props.title}</p>

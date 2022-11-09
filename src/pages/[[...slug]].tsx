@@ -49,7 +49,7 @@ const Page: React.FC<Props> = (props) => {
 
         {page?.seo?.dontIndex && <meta name="robots" content="noindex" />}
       </Head>
-      <div>
+      <div className="min-h-screen flex flex-col">
         {page.modules &&
           page.modules.map((module, index) => {
             return <Module key={index} {...module} />;
